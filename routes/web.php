@@ -7,6 +7,7 @@ use App\Http\Controllers\PruebaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TaskController;
 
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
+route::resource('users' , Usercontroller::class);
 
 
 route::resource('tasks' , Taskcontroller::class);
